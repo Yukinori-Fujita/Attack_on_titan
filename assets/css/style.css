@@ -9,7 +9,12 @@ header {
 #news-twitter {
   display: flex;
   justify-content: space-around;
-  background-color: #044204;
+  background-image: url(./img/sinnzouwosasageyo.jpeg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 100%;
   padding: 50px 0;
 }
 
@@ -25,6 +30,11 @@ header {
 
 #news-twitter p {
   padding-left: 50px;
+  color: white;
+}
+
+#news-twitter time {
+  color: #ab0505;
 }
 
 .fade {

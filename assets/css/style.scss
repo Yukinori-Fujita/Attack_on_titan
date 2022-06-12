@@ -23,17 +23,24 @@ header{
     li{
         padding: 30px;
         display: flex;
-        justify-content: space-around;
         border-bottom: solid 1px black;
     }
 
     p{
-        font-size: 10px;
+        padding-left: 50px;
     }
 }
 
 .fade{
     text-align: center;
+
+    img{
+        margin: 0 auto;
+    }
+
+    ul{
+        padding: 30px 0;
+    }
 }
 
 // newsとtwitterロゴ

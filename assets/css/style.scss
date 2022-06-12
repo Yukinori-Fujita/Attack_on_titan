@@ -60,3 +60,8 @@ header{
 .news{
     width: 55%;
 }
+
+.kjn img{
+    max-width: 30%;
+    clip-path: ellipse(25% 40% at 50% 50%);
+}

@@ -13,7 +13,13 @@ header{
 #news-twitter{
     display: flex;
     justify-content: space-around;
-    background-color: rgb(4, 66, 4);//テスト用
+    // background-color: rgb(4, 66, 4);
+    background-image: url(./img/sinnzouwosasageyo.jpeg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
     padding: 50px 0;
 
     .news-twitter{
@@ -28,6 +34,11 @@ header{
 
     p{
         padding-left: 50px;
+        color: white;
+    }
+
+    time{
+        color: rgb(171, 5, 5);
     }
 }
 

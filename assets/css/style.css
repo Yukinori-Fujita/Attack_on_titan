@@ -9,7 +9,7 @@ header {
 #news-twitter {
   display: flex;
   justify-content: space-around;
-  background-color: aqua;
+  background-color: #044204;
   padding: 50px 0;
 }
 
@@ -33,10 +33,19 @@ header {
 
 .fade img {
   margin: 0 auto;
+  margin-bottom: 20px;
 }
 
 .fade ul {
   padding: 30px 0;
+}
+
+.btn {
+  background-color: black;
+  color: white;
+  width: 220px;
+  padding: 15px 0;
+  margin: 0 auto;
 }
 
 .news-twitter {

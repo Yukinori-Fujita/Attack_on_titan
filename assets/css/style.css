@@ -10,10 +10,33 @@ header {
   display: flex;
   justify-content: space-around;
   background-color: aqua;
-  padding-top: 50px;
+  padding: 50px 0;
+}
+
+#news-twitter .news-twitter {
+  display: flex;
+}
+
+#news-twitter li {
+  padding: 30px;
+  display: flex;
+  justify-content: space-around;
+  border-bottom: solid 1px black;
+}
+
+#news-twitter p {
+  font-size: 10px;
+}
+
+.fade {
+  text-align: center;
 }
 
 .news-twitter {
   height: 20px;
+}
+
+.news {
+  width: 55%;
 }
 /*# sourceMappingURL=style.css.map */

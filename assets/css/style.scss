@@ -14,10 +14,33 @@ header{
     display: flex;
     justify-content: space-around;
     background-color: aqua;//テスト用
-    padding-top: 50px;
+    padding: 50px 0;
+
+    .news-twitter{
+        display: flex;
+    }
+
+    li{
+        padding: 30px;
+        display: flex;
+        justify-content: space-around;
+        border-bottom: solid 1px black;
+    }
+
+    p{
+        font-size: 10px;
+    }
+}
+
+.fade{
+    text-align: center;
 }
 
 // newsとtwitterロゴ
 .news-twitter{
     height: 20px;
+}
+
+.news{
+    width: 55%;
 }

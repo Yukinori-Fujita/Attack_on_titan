@@ -1,8 +1,16 @@
+.parallax-bg {
+  background-image: url("./img/sinnzouwosasageyo.jpeg");
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
 header {
   display: flex;
   justify-content: space-between;
   padding: 30px;
-  background-color: rgba(165, 42, 42, 0.41);
+  background-color: rgba(165, 42, 42, 0.664);
   color: white;
   font-family: 'Sorts Mill Goudy', serif;
 }
@@ -10,7 +18,6 @@ header {
 #news-twitter {
   display: flex;
   justify-content: space-around;
-  background-image: url(./img/sinnzouwosasageyo.jpeg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;

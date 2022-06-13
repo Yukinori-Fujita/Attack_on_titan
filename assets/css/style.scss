@@ -1,6 +1,27 @@
 // *{
 //     border: solid 1px #000;
 // }
+
+// 固定する画像
+// div {
+//     box-sizing: border-box;
+//     color: #FFF;
+//     font-size: 5rem;
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+//     height: 100%;
+//     padding: 5%;
+//   }
+
+.parallax-bg {
+    background-image: url('./img/sinnzouwosasageyo.jpeg');
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
 // header
 header {
     // width: 100%;
@@ -8,7 +29,7 @@ header {
     display: flex;
     justify-content: space-between;
     padding: 30px;
-    background-color: rgba(165, 42, 42, 0.41);
+    background-color: rgba(165, 42, 42, 0.664);
     color: white;
     font-family: 'Sorts Mill Goudy', serif;
 }
@@ -18,7 +39,7 @@ header {
     display: flex;
     justify-content: space-around;
     // background-color: rgb(4, 66, 4);
-    background-image: url(./img/sinnzouwosasageyo.jpeg);
+    // background-image: url(./img/sinnzouwosasageyo.jpeg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;

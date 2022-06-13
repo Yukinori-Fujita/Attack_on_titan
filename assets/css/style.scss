@@ -9,7 +9,7 @@
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-  }
+}
 
 // header
 header {
@@ -89,7 +89,7 @@ header {
 // 巨人紹介
 $col1:300px;
 
-.kyojinn{
+.kyojinn {
     height: $col1;
     width: $col1;
     // clip-path: ellipse(25% 40% at 50% 50%);
@@ -101,50 +101,186 @@ $col1:300px;
 //     color: rgb(171, 5, 5);   
 // }
 
-h1{
+h1 {
     font-family: 'Sorts Mill Goudy', serif;
     font-size: 50px;
     text-align: center;
     padding: 40px;
+
     // background-color: rgba(0, 0, 0, 0.899);
-    &::first-letter{
+    &::first-letter {
         font-family: 'Sorts Mill Goudy', serif;
         font-size: 60px;
-        color: rgb(171, 5, 5);   
+        color: rgb(171, 5, 5);
     }
 
 }
 
-.kjn{
-    ul{
+.kjn {
+    ul {
         display: flex;
         justify-content: space-around;
         flex-wrap: wrap;
         padding: 50px;
         margin: auto;
     }
+
+    li{
+        position: relative;
+    }
 }
 
-h2::first-letter{
-    font-family: 'Sorts Mill Goudy', serif;
-    font-size: 30px;
-    color: rgb(171, 5, 5);
-    // color: rgb(78, 18, 18);   
-}
 
-h2{
+
+h2 {
     font-family: 'Sorts Mill Goudy', serif;
     font-size: 25px;
+
+    &::first-letter {
+        font-family: 'Sorts Mill Goudy', serif;
+        font-size: 30px;
+        color: rgb(171, 5, 5);
+        // color: rgb(78, 18, 18);   
+    }
 }
 
-p{
+p {
     font-family: 'Sorts Mill Goudy', serif;
 
+}
+
+// hover
+// 共通
+$colfileter:300px;
+.fileter {
+    height: $colfileter;
+    width: $colfileter;
+    background-image: url(./img/eren-seinenn.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    right: -101%;
+    transition: all 0.5s ease;
+}
+
+.ranking-text {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 190px;
+    left: -100%;
+    color: white;
+    transition: all 0.5s ease;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    font-size: 18px;
+    text-align: center;
+}
+
+// 始祖の巨人
+#shiso {
+    height: $col1;
+    width: $col1;
+    position: relative;
+    overflow: hidden;
+
+    &:hover .ranking-text {
+        left: 35%;
+    }
+
+    &:hover .fileter {
+        right: 0;
+    }
+}
+
+// 進撃の巨人
+.fileter-shingeki{
+  @extend .fileter;
+  background-image: url(./img/20200822100953.jpeg);
+}
+
+#shingeki {
+  height: $col1;
+  width: $col1;
+  position: relative;
+  overflow: hidden;
+
+  &:hover .ranking-text {
+      left: 35%;
+  }
+
+  &:hover .fileter {
+      right: 0;
+  }
+}
+
+// 超大型巨人
+.fileter-ogata{
+  @extend .fileter;
+  background-image: url(./img/aruminn.jpeg);
+}
+
+#ogata {
+  height: $col1;
+  width: $col1;
+  position: relative;
+  overflow: hidden;
+
+  &:hover .ranking-text {
+      left: 35%;
+  }
+
+  &:hover .fileter {
+      right: 0;
+  }
+}
+
+// 鎧の巨人
+.fileter-yoroi{
+  @extend .fileter;
+  background-image: url(./img/raina-.jpeg);
+}
+
+#yoroi {
+  height: $col1;
+  width: $col1;
+  position: relative;
+  overflow: hidden;
+
+  &:hover .ranking-text {
+      left: 35%;
+  }
+
+  &:hover .fileter {
+      right: 0;
+  }
+}
+
+// 女型の巨人
+.fileter-megata{
+  @extend .fileter;
+  background-image: url(./img/annie.jpeg);
+}
+
+#megata {
+  height: $col1;
+  width: $col1;
+  position: relative;
+  overflow: hidden;
+
+  &:hover .ranking-text {
+      left: 35%;
+  }
+
+  &:hover .fileter {
+      right: 0;
+  }
 }
 
 
 // フッター
-.footerWrapper{
+.footerWrapper {
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -153,18 +289,19 @@ p{
 
 $colshare:50px;
 
-.banner{
-    img{
+.banner {
+    img {
         height: 80px;
         width: 300px;
     }
 }
 
-.share{
+.share {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    img{
+
+    img {
         height: $colshare;
         width: $colshare;
     }

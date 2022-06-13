@@ -79,17 +79,17 @@ header {
   width: 300px;
 }
 
-h1::first-letter {
-  font-family: 'Sorts Mill Goudy', serif;
-  font-size: 60px;
-  color: #ab0505;
-}
-
 h1 {
   font-family: 'Sorts Mill Goudy', serif;
   font-size: 50px;
   text-align: center;
   padding: 40px;
+}
+
+h1::first-letter {
+  font-family: 'Sorts Mill Goudy', serif;
+  font-size: 60px;
+  color: #ab0505;
 }
 
 .kjn ul {

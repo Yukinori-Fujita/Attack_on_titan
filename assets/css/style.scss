@@ -88,3 +88,30 @@ $col1:200px;
         flex-wrap: wrap;
     }
 }
+
+// フッター
+.footerWrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 30px;
+}
+
+$colshare:50px;
+
+.banner{
+    img{
+        height: 80px;
+        width: 300px;
+    }
+}
+
+.share{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    img{
+        height: $colshare;
+        width: $colshare;
+    }
+}

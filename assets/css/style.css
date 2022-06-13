@@ -76,4 +76,27 @@ header {
   justify-content: space-around;
   flex-wrap: wrap;
 }
+
+.footerWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding-top: 30px;
+}
+
+.banner img {
+  height: 80px;
+  width: 300px;
+}
+
+.share {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.share img {
+  height: 50px;
+  width: 50px;
+}
 /*# sourceMappingURL=style.css.map */

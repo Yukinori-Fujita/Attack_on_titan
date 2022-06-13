@@ -2,7 +2,7 @@ header {
   display: flex;
   justify-content: space-around;
   padding: 30px;
-  background-color: brown;
+  background-color: rgba(165, 42, 42, 0.41);
   color: white;
 }
 

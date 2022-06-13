@@ -4,5 +4,6 @@ $(function () {
         fade: true, // スライドをフェードイン・フェードアウト
         cssEase: 'linear',// アニメーション
         speed: 200, // フェードアニメーションの速度設定
+        arrows: false,
     });
 })

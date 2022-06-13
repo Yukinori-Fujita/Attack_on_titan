@@ -65,4 +65,15 @@ header {
 .news {
   width: 55%;
 }
+
+.kyojinn {
+  height: 200px;
+  width: 200px;
+}
+
+.kjn ul {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
 /*# sourceMappingURL=style.css.map */

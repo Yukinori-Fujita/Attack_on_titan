@@ -1,5 +1,5 @@
 // header
-header{
+header {
     // width: 100%;
     // position: fixed;
     display: flex;
@@ -10,7 +10,7 @@ header{
 }
 
 // newsとtwitter共通
-#news-twitter{
+#news-twitter {
     display: flex;
     justify-content: space-around;
     // background-color: rgb(4, 66, 4);
@@ -22,40 +22,40 @@ header{
     width: 100%;
     padding: 50px 0;
 
-    .news-twitter{
+    .news-twitter {
         display: flex;
     }
 
-    li{
+    li {
         padding: 30px;
         display: flex;
         border-bottom: solid 1px black;
     }
 
-    p{
+    p {
         padding-left: 50px;
         color: white;
     }
 
-    time{
+    time {
         color: rgb(171, 5, 5);
     }
 }
 
-.fade{
+.fade {
     text-align: center;
 
-    img{
+    img {
         margin: 0 auto;
         margin-bottom: 20px;
     }
 
-    ul{
+    ul {
         padding: 30px 0;
     }
 }
 
-.btn{
+.btn {
     background-color: black;
     color: white;
     width: 220px;
@@ -64,15 +64,27 @@ header{
 }
 
 // newsとtwitterロゴ
-.news-twitter{
+.news-twitter {
     height: 20px;
 }
 
-.news{
+.news {
     width: 55%;
 }
 
-.kjn img{
-    max-width: 30%;
-    clip-path: ellipse(25% 40% at 50% 50%);
+// 巨人紹介
+$col1:200px;
+
+.kyojinn{
+    height: $col1;
+    width: $col1;
+    // clip-path: ellipse(25% 40% at 50% 50%);
+}
+
+.kjn{
+    ul{
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
 }

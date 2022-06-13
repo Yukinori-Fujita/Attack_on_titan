@@ -73,7 +73,7 @@ header {
 }
 
 // 巨人紹介
-$col1:200px;
+$col1:300px;
 
 .kyojinn{
     height: $col1;
@@ -86,5 +86,24 @@ $col1:200px;
         display: flex;
         justify-content: space-around;
         flex-wrap: wrap;
+        padding: 50px;
+        margin: auto;
     }
+}
+
+h2::first-letter{
+    font-family: 'Sorts Mill Goudy', serif;
+    font-size: 30px;
+    color: rgb(171, 5, 5);
+    // color: rgb(78, 18, 18);   
+}
+
+h2{
+    font-family: 'Sorts Mill Goudy', serif;
+    font-size: 25px;
+}
+
+p{
+    font-family: 'Sorts Mill Goudy', serif;
+
 }

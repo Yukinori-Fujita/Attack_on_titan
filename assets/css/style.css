@@ -117,19 +117,6 @@ p {
   font-family: 'Sorts Mill Goudy', serif;
 }
 
-.fileter, .fileter-shingeki, .fileter-ogata, .fileter-yoroi, .fileter-megata {
-  height: 300px;
-  width: 300px;
-  background-image: url(./img/eren-seinenn.jpeg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: absolute;
-  top: 0;
-  right: -101%;
-  transition: all 0.5s ease;
-}
-
 .ranking-text {
   width: 100px;
   height: 100px;
@@ -143,95 +130,48 @@ p {
   text-align: center;
 }
 
-#shiso {
+.hover-animetion {
   height: 300px;
   width: 300px;
   position: relative;
   overflow: hidden;
 }
 
-#shiso:hover .ranking-text {
+.hover-animetion:hover .ranking-text {
   left: 35%;
 }
 
-#shiso:hover .fileter, #shiso:hover .fileter-shingeki, #shiso:hover .fileter-ogata, #shiso:hover .fileter-yoroi, #shiso:hover .fileter-megata {
+.hover-animetion:hover .fileter, .hover-animetion:hover .fileter-shingeki, .hover-animetion:hover .fileter-ogata, .hover-animetion:hover .fileter-yoroi, .hover-animetion:hover .fileter-megata {
   right: 0;
+}
+
+.fileter, .fileter-shingeki, .fileter-ogata, .fileter-yoroi, .fileter-megata {
+  height: 300px;
+  width: 300px;
+  background-image: url(./img/eren-seinenn.jpeg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  right: -101%;
+  transition: all 0.5s ease;
 }
 
 .fileter-shingeki {
   background-image: url(./img/20200822100953.jpeg);
 }
 
-#shingeki {
-  height: 300px;
-  width: 300px;
-  position: relative;
-  overflow: hidden;
-}
-
-#shingeki:hover .ranking-text {
-  left: 35%;
-}
-
-#shingeki:hover .fileter, #shingeki:hover .fileter-shingeki, #shingeki:hover .fileter-ogata, #shingeki:hover .fileter-yoroi, #shingeki:hover .fileter-megata {
-  right: 0;
-}
-
 .fileter-ogata {
   background-image: url(./img/aruminn.jpeg);
-}
-
-#ogata {
-  height: 300px;
-  width: 300px;
-  position: relative;
-  overflow: hidden;
-}
-
-#ogata:hover .ranking-text {
-  left: 35%;
-}
-
-#ogata:hover .fileter, #ogata:hover .fileter-shingeki, #ogata:hover .fileter-ogata, #ogata:hover .fileter-yoroi, #ogata:hover .fileter-megata {
-  right: 0;
 }
 
 .fileter-yoroi {
   background-image: url(./img/raina-.jpeg);
 }
 
-#yoroi {
-  height: 300px;
-  width: 300px;
-  position: relative;
-  overflow: hidden;
-}
-
-#yoroi:hover .ranking-text {
-  left: 35%;
-}
-
-#yoroi:hover .fileter, #yoroi:hover .fileter-shingeki, #yoroi:hover .fileter-ogata, #yoroi:hover .fileter-yoroi, #yoroi:hover .fileter-megata {
-  right: 0;
-}
-
 .fileter-megata {
   background-image: url(./img/annie.jpeg);
-}
-
-#megata {
-  height: 300px;
-  width: 300px;
-  position: relative;
-  overflow: hidden;
-}
-
-#megata:hover .ranking-text {
-  left: 35%;
-}
-
-#megata:hover .fileter, #megata:hover .fileter-shingeki, #megata:hover .fileter-ogata, #megata:hover .fileter-yoroi, #megata:hover .fileter-megata {
-  right: 0;
 }
 
 .footerWrapper {

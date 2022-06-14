@@ -131,7 +131,7 @@ h1 {
         margin: auto;
     }
 
-    li{
+    li {
         position: relative;
     }
 }
@@ -158,18 +158,6 @@ p {
 // hover
 // 共通
 $colfileter:300px;
-.fileter {
-    height: $colfileter;
-    width: $colfileter;
-    background-image: url(./img/eren-seinenn.jpeg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: absolute;
-    top: 0;
-    right: -101%;
-    transition: all 0.5s ease;
-}
 
 .ranking-text {
     width: 100px;
@@ -184,8 +172,7 @@ $colfileter:300px;
     text-align: center;
 }
 
-// 始祖の巨人
-#shiso {
+.hover-animetion {
     height: $col1;
     width: $col1;
     position: relative;
@@ -200,90 +187,45 @@ $colfileter:300px;
     }
 }
 
-// 進撃の巨人
-.fileter-shingeki{
-  @extend .fileter;
-  background-image: url(./img/20200822100953.jpeg);
+// 始祖の巨人
+.fileter {
+    height: $colfileter;
+    width: $colfileter;
+    background-image: url(./img/eren-seinenn.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    right: -101%;
+    transition: all 0.5s ease;
 }
 
-#shingeki {
-  height: $col1;
-  width: $col1;
-  position: relative;
-  overflow: hidden;
-
-  &:hover .ranking-text {
-      left: 35%;
-  }
-
-  &:hover .fileter {
-      right: 0;
-  }
+// 進撃の巨人
+.fileter-shingeki {
+    @extend .fileter;
+    background-image: url(./img/20200822100953.jpeg);
 }
 
 // 超大型巨人
-.fileter-ogata{
-  @extend .fileter;
-  background-image: url(./img/aruminn.jpeg);
-}
-
-#ogata {
-  height: $col1;
-  width: $col1;
-  position: relative;
-  overflow: hidden;
-
-  &:hover .ranking-text {
-      left: 35%;
-  }
-
-  &:hover .fileter {
-      right: 0;
-  }
+.fileter-ogata {
+    @extend .fileter;
+    background-image: url(./img/aruminn.jpeg);
 }
 
 // 鎧の巨人
-.fileter-yoroi{
-  @extend .fileter;
-  background-image: url(./img/raina-.jpeg);
-}
-
-#yoroi {
-  height: $col1;
-  width: $col1;
-  position: relative;
-  overflow: hidden;
-
-  &:hover .ranking-text {
-      left: 35%;
-  }
-
-  &:hover .fileter {
-      right: 0;
-  }
+.fileter-yoroi {
+    @extend .fileter;
+    background-image: url(./img/raina-.jpeg);
 }
 
 // 女型の巨人
-.fileter-megata{
-  @extend .fileter;
-  background-image: url(./img/annie.jpeg);
+.fileter-megata {
+    @extend .fileter;
+    background-image: url(./img/annie.jpeg);
 }
 
-#megata {
-  height: $col1;
-  width: $col1;
-  position: relative;
-  overflow: hidden;
-
-  &:hover .ranking-text {
-      left: 35%;
-  }
-
-  &:hover .fileter {
-      right: 0;
-  }
-}
-
+// hoverここまで
 
 // フッター
 .footerWrapper {

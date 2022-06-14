@@ -227,6 +227,12 @@ $colfileter:300px;
     background-image: url(./img/annie.jpeg);
 }
 
+// 顎の巨人
+.fileter-ago {
+    @extend .fileter;
+    background-image: url(./img/poruko.jpeg);
+}
+
 // hoverここまで
 
 // フッター

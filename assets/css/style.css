@@ -100,6 +100,8 @@ h1::first-letter {
 
 .kjn li {
   position: relative;
+  background-color: rgba(4, 66, 4, 0.217);
+  border-radius: 0.5em;
 }
 
 h2 {

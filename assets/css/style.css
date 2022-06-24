@@ -15,6 +15,15 @@ header {
   font-family: 'Sorts Mill Goudy', serif;
 }
 
+@media screen and (max-width: 767px) {
+  header {
+    display: block;
+    text-align: center;
+    font-size: 13px;
+    padding: 20px;
+  }
+}
+
 #news-twitter {
   display: flex;
   justify-content: space-around;
@@ -22,6 +31,12 @@ header {
   height: 100%;
   width: 100%;
   padding: 50px 0;
+}
+
+@media screen and (max-width: 767px) {
+  #news-twitter {
+    display: block;
+  }
 }
 
 #news-twitter .news-twitter {
@@ -32,6 +47,12 @@ header {
   padding: 30px;
   display: flex;
   border-bottom: solid 1px black;
+}
+
+@media screen and (max-width: 767px) {
+  #news-twitter li {
+    display: block;
+  }
 }
 
 #news-twitter p {
@@ -70,6 +91,12 @@ header {
 
 .news {
   width: 55%;
+}
+
+@media screen and (max-width: 767px) {
+  .news {
+    width: 100%;
+  }
 }
 
 .kyojinn {
@@ -147,6 +174,12 @@ p {
   right: 0;
 }
 
+@media screen and (max-width: 767px) {
+  #shiso {
+    margin-bottom: 100px;
+  }
+}
+
 .fileter, .fileter-shingeki, .fileter-ogata, .fileter-yoroi, .fileter-megata, .fileter-ago {
   height: 300px;
   width: 300px;
@@ -160,8 +193,20 @@ p {
   transition: all 0.5s ease;
 }
 
+@media screen and (max-width: 767px) {
+  #shingeki {
+    margin-bottom: 100px;
+  }
+}
+
 .fileter-shingeki {
   background-image: url(./img/20200822100953.jpeg);
+}
+
+@media screen and (max-width: 767px) {
+  #ogata {
+    margin-bottom: 100px;
+  }
 }
 
 .fileter-ogata {
@@ -172,12 +217,42 @@ p {
   background-image: url(./img/raina-.jpeg);
 }
 
+@media screen and (max-width: 767px) {
+  #megata {
+    margin-bottom: 100px;
+  }
+}
+
 .fileter-megata {
   background-image: url(./img/annie.jpeg);
 }
 
+@media screen and (max-width: 767px) {
+  #agito {
+    margin-bottom: 100px;
+  }
+}
+
 .fileter-ago {
   background-image: url(./img/poruko.jpeg);
+}
+
+@media screen and (max-width: 767px) {
+  #syariki {
+    margin-bottom: 100px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #sentui {
+    margin-bottom: 100px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .muku {
+    margin-bottom: 100px;
+  }
 }
 
 #page-top {
@@ -210,6 +285,12 @@ p {
   justify-content: space-around;
   background-color: rgba(4, 66, 4, 0.347);
   padding: 30px 0 50px;
+}
+
+@media screen and (max-width: 767px) {
+  .footerWrapper {
+    flex-direction: column-reverse;
+  }
 }
 
 .banner img {

@@ -1,6 +1,9 @@
-// *{
-//     border: solid 1px #000;
-// }
+// レスポンシブ
+@mixin sp-screen {
+    @media screen and (max-width: 767px) {
+        @content;
+    }
+}
 
 // 固定する画像
 .parallax-bg {
@@ -21,6 +24,13 @@ header {
     background-color: rgba(165, 42, 42, 0.664);
     color: white;
     font-family: 'Sorts Mill Goudy', serif;
+
+    @include sp-screen {
+        display: block;
+        text-align: center;
+        font-size: 13px;
+        padding: 20px;
+    }
 }
 
 // newsとtwitter共通
@@ -36,6 +46,10 @@ header {
     width: 100%;
     padding: 50px 0;
 
+    @include sp-screen{
+        display: block;
+    }
+
     .news-twitter {
         display: flex;
     }
@@ -44,6 +58,10 @@ header {
         padding: 30px;
         display: flex;
         border-bottom: solid 1px black;
+
+        @include sp-screen{
+            display: block;
+        }
     }
 
     p {
@@ -84,13 +102,10 @@ header {
 
 .news {
     width: 55%;
+    @include sp-screen{
+        width: 100%;
+    }
 }
-
-// Twitter
-// .twitter{
-//     width: 200px;
-//     height: 300px;
-// }
 
 // 巨人紹介
 $col1:300px;
@@ -190,6 +205,12 @@ $colfileter:300px;
 }
 
 // 始祖の巨人
+#shiso {
+    @include sp-screen {
+        margin-bottom: 100px;
+    }
+}
+
 .fileter {
     height: $colfileter;
     width: $colfileter;
@@ -204,33 +225,82 @@ $colfileter:300px;
 }
 
 // 進撃の巨人
+#shingeki {
+    @include sp-screen {
+        margin-bottom: 100px;
+    }
+}
+
 .fileter-shingeki {
     @extend .fileter;
     background-image: url(./img/20200822100953.jpeg);
 }
 
 // 超大型巨人
+#ogata{
+    @include sp-screen{
+        margin-bottom: 100px;
+    }
+}
+
 .fileter-ogata {
     @extend .fileter;
     background-image: url(./img/aruminn.jpeg);
 }
 
 // 鎧の巨人
+
 .fileter-yoroi {
     @extend .fileter;
     background-image: url(./img/raina-.jpeg);
 }
 
 // 女型の巨人
+#megata{
+    @include sp-screen{
+        margin-bottom: 100px;
+    }
+}
+
 .fileter-megata {
     @extend .fileter;
     background-image: url(./img/annie.jpeg);
 }
 
 // 顎の巨人
+#agito{
+    @include sp-screen{
+        margin-bottom: 100px;
+    }
+}
+
 .fileter-ago {
     @extend .fileter;
     background-image: url(./img/poruko.jpeg);
+}
+
+// 車力の巨人
+#syariki{
+    @include sp-screen{
+        margin-bottom: 100px;
+    }
+}
+
+// 獣の巨人
+
+
+// 戦鎚の巨人
+#sentui{
+    @include sp-screen{
+        margin-bottom: 100px;
+    }
+}
+
+// 無垢の巨人
+.muku{
+    @include sp-screen{
+        margin-bottom: 100px;
+    }
 }
 
 // hoverここまで
@@ -243,9 +313,9 @@ $colfileter:300px;
     right: 30px;
     line-height: 1;
     z-index: 99;
-  }
-  
-  #page-top a {
+}
+
+#page-top a {
     background: rgba(21, 98, 252, 0.603);
     font-size: 40px;
     width: 80px;
@@ -254,11 +324,11 @@ $colfileter:300px;
     display: block;
     border-radius: 99px;
     transition: all .1s ease;
-  }
-  
-  #page-top a:hover {
+}
+
+#page-top a:hover {
     opacity: 0.5;
-  }
+}
 
 // フッター
 .footerWrapper {
@@ -267,6 +337,10 @@ $colfileter:300px;
     justify-content: space-around;
     background-color: rgba(4, 66, 4, 0.347);
     padding: 30px 0 50px;
+
+    @include sp-screen{
+        flex-direction: column-reverse;
+    }
 }
 
 $colshare:50px;

@@ -170,7 +170,7 @@ p {
   left: 35%;
 }
 
-.hover-animetion:hover .fileter, .hover-animetion:hover .fileter-shingeki, .hover-animetion:hover .fileter-ogata, .hover-animetion:hover .fileter-yoroi, .hover-animetion:hover .fileter-megata, .hover-animetion:hover .fileter-ago {
+.hover-animetion:hover .fileter, .hover-animetion:hover .fileter-shingeki, .hover-animetion:hover .fileter-ogata, .hover-animetion:hover .fileter-yoroi, .hover-animetion:hover .fileter-megata, .hover-animetion:hover .fileter-ago, .hover-animetion:hover .fileter-syariki, .hover-animetion:hover .fileter-kemono, .hover-animetion:hover .fileter-sentui {
   right: 0;
 }
 
@@ -180,7 +180,7 @@ p {
   }
 }
 
-.fileter, .fileter-shingeki, .fileter-ogata, .fileter-yoroi, .fileter-megata, .fileter-ago {
+.fileter, .fileter-shingeki, .fileter-ogata, .fileter-yoroi, .fileter-megata, .fileter-ago, .fileter-syariki, .fileter-kemono, .fileter-sentui {
   height: 300px;
   width: 300px;
   background-image: url(./img/eren-seinenn.jpeg);
@@ -243,10 +243,22 @@ p {
   }
 }
 
+.fileter-syariki {
+  background-image: url(./img/pi-ku.jpeg);
+}
+
+.fileter-kemono {
+  background-image: url(./img/Zeke_Jaeger.jpeg);
+}
+
 @media screen and (max-width: 767px) {
   #sentui {
     margin-bottom: 100px;
   }
+}
+
+.fileter-sentui {
+  background-image: url(./img/darksideeren.jpeg);
 }
 
 @media screen and (max-width: 767px) {

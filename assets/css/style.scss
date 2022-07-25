@@ -46,7 +46,7 @@ header {
     width: 100%;
     padding: 50px 0;
 
-    @include sp-screen{
+    @include sp-screen {
         display: block;
     }
 
@@ -59,7 +59,7 @@ header {
         display: flex;
         border-bottom: solid 1px black;
 
-        @include sp-screen{
+        @include sp-screen {
             display: block;
         }
     }
@@ -102,7 +102,8 @@ header {
 
 .news {
     width: 55%;
-    @include sp-screen{
+
+    @include sp-screen {
         width: 100%;
     }
 }
@@ -237,8 +238,8 @@ $colfileter:300px;
 }
 
 // 超大型巨人
-#ogata{
-    @include sp-screen{
+#ogata {
+    @include sp-screen {
         margin-bottom: 100px;
     }
 }
@@ -256,8 +257,8 @@ $colfileter:300px;
 }
 
 // 女型の巨人
-#megata{
-    @include sp-screen{
+#megata {
+    @include sp-screen {
         margin-bottom: 100px;
     }
 }
@@ -268,8 +269,8 @@ $colfileter:300px;
 }
 
 // 顎の巨人
-#agito{
-    @include sp-screen{
+#agito {
+    @include sp-screen {
         margin-bottom: 100px;
     }
 }
@@ -280,25 +281,38 @@ $colfileter:300px;
 }
 
 // 車力の巨人
-#syariki{
-    @include sp-screen{
+#syariki {
+    @include sp-screen {
         margin-bottom: 100px;
     }
+}
+
+.fileter-syariki {
+    @extend .fileter;
+    background-image: url(./img/pi-ku.jpeg);
 }
 
 // 獣の巨人
-
+.fileter-kemono {
+    @extend .fileter;
+    background-image: url(./img/Zeke_Jaeger.jpeg);
+}
 
 // 戦鎚の巨人
-#sentui{
-    @include sp-screen{
+#sentui {
+    @include sp-screen {
         margin-bottom: 100px;
     }
 }
 
+.fileter-sentui {
+    @extend .fileter;
+    background-image: url(./img/darksideeren.jpeg);
+}
+
 // 無垢の巨人
-.muku{
-    @include sp-screen{
+.muku {
+    @include sp-screen {
         margin-bottom: 100px;
     }
 }
@@ -338,7 +352,7 @@ $colfileter:300px;
     background-color: rgba(4, 66, 4, 0.347);
     padding: 30px 0 50px;
 
-    @include sp-screen{
+    @include sp-screen {
         flex-direction: column-reverse;
     }
 }
